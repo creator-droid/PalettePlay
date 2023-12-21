@@ -34,6 +34,10 @@ img {
   font-size: 75px;
   font-family: "Antonio", sans-serif;
   margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-20px);
+
+  animation: fadeInUp 1s ease-out forwards;
 }
 .button {
   background-color: #848947;
@@ -56,13 +60,6 @@ p {
   font-weight: lighter;
   color: white;
 }
-.name {
-  opacity: 0;
-  transform: translateY(-20px);
-
-  animation: fadeInUp 1s ease-out forwards;
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
