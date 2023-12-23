@@ -81,6 +81,7 @@ p {
     transform: translateY(0);
   }
 }
+
 @media only screen and (max-width: 768px) {
   .left-side {
     padding: 10px;
