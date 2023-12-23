@@ -10,7 +10,7 @@ $(document).ready(function () {
   if (searchInputTxt) {
     // Make an API request to get meals based on the search input
     $.ajax({
-      url: `https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`,
+      url: `www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`,
       method: "GET",
       success: function (data) {
         // Check if meals are returned
@@ -45,14 +45,4 @@ $(document).ready(function () {
       },
     });
   }
-
-  $.ajax({
-    // ... existing options
-    error: function (xhr, status, error) {
-      console.error("Error:", status, error);
-      $("#meals-container").html(
-        "<p>Error fetching meals. Please try again later.</p>"
-      );
-    },
-  });
 });
