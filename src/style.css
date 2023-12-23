@@ -44,16 +44,27 @@ img {
   padding: 8px;
   border-radius: 15px;
   border: none;
-  font-weight: 530;
+  font-weight: 550;
 }
 .enterDish {
+  width: 100%;
+  box-sizing: border-box;
   border: none;
   padding: 8px;
   border-radius: 15px;
   text-align: center;
 }
 .search-recipe {
-  margin-top: 75px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 p {
   font-size: 18px;
@@ -68,5 +79,24 @@ p {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .left-side {
+    padding: 10px;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .left-side {
+    padding: 5px;
+  }
+
+  .name {
+    font-size: 40px;
   }
 }
