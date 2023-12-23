@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   </head>
   <body>
@@ -19,7 +25,8 @@
       <p class="slogan">Stirring Stories, Savouring Glory!</p>
       <form
         class="search-recipe"
-        id="search-recipe"
+        required
+        id="search-input"
         action="recipe.html"
         method="GET"
       >
@@ -30,14 +37,20 @@
             required
             id="enterDish"
             class="enterDish"
+            name="searchInput"
           />
-          <input type="submit" value="SavourSearch" class="button" />
+          <input
+            type="submit"
+            value="SavourSearch"
+            class="button"
+            id="search-btn"
+          />
         </div>
       </form>
     </div>
     <div class="image">
       <img src="img/left image.jpg" alt="description-img" />
     </div>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </body>
 </html>
