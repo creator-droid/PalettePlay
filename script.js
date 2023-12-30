@@ -29,21 +29,18 @@ document.addEventListener("DOMContentLoaded", function () {
             for (let i = 0; i < meals.length; i++) {
               const meal = meals[i];
               html += `
-                <div class="meal-item" data-id="${meal.idMeal}">
-                  <div class="meal-img">
-                    <img src="${meal.strMealThumb}" alt="food">
-                  </div>
-                  <div class="meal-name">
-                    <h3>${meal.strMeal}</h3>
-                    <a href="#" class="recipe-btn">Get Recipe</a>
+                <div class="row">
+                  <div class="meal-item" data-id="${meal.idMeal}">
+                    <div class="meal-img">
+                      <img src="${meal.strMealThumb}" alt="food">
+                    </div>
+                    <div class="meal-name">
+                      <h3>${meal.strMeal}</h3>
+                      <a href="#" class="recipe-btn">Get Recipe</a>
+                    </div>
                   </div>
                 </div>
               `;
-
-              // Add a new row after every three recipes
-              if ((i + 1) % 3 === 0 && i !== meals.length - 1) {
-                html += "</div><div class='row'>";
-              }
             }
             mealList.classList.remove("notFound");
           } else {
