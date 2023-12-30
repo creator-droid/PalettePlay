@@ -3,13 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const mealDetailsContent = document.querySelector(".meal-details-content");
   const recipeCloseBtn = document.getElementById("recipe-close-btn");
   const searchBtn = document.getElementById("search-btn");
+  const searchForm = document.getElementById("search-input");
   // ... other code
 
   // event listeners
-  searchForm.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form submission
-    getMealList();
-  });
+  if (searchForm) {
+    searchForm.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent form submission
+      getMealList();
+    });
+  }
   mealList.addEventListener("click", getMealRecipe);
   recipeCloseBtn.addEventListener("click", () => {
     mealDetailsContent.parentElement.classList.remove("showRecipe");
