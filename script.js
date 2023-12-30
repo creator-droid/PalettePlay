@@ -1,13 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const searchBtn = document.getElementById("search-btn");
+  const searchForm = document.getElementById("search-input");
   const mealList = document.getElementById("meal");
   const mealDetailsContent = document.querySelector(".meal-details-content");
   const recipeCloseBtn = document.getElementById("recipe-close-btn");
 
   // event listeners
-  searchBtn.addEventListener("click", getMealList);
+  searchForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    getMealList();
+  });
+
   mealList.addEventListener("click", getMealRecipe);
-  recipeCloseBtn.addEventListener("click", () => {
+  recipeCloseBtn.addEventListener("click", function () {
     mealDetailsContent.parentElement.classList.remove("showRecipe");
   });
 
