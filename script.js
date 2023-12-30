@@ -6,7 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // ... other code
 
   // event listeners
-  searchBtn.addEventListener("click", getMealList);
+  searchForm.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
+    getMealList();
+  });
   mealList.addEventListener("click", getMealRecipe);
   recipeCloseBtn.addEventListener("click", () => {
     mealDetailsContent.parentElement.classList.remove("showRecipe");
