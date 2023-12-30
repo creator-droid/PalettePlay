@@ -25,27 +25,25 @@ document.addEventListener("DOMContentLoaded", function () {
           let html = "";
           if (data.meals) {
             const meals = data.meals;
-            const columns = 3; // Number of columns
 
-            for (let i = 0; i < meals.length; i += columns) {
-              html += "<div class='row'>";
-              for (let j = i; j < i + columns && j < meals.length; j++) {
-                const meal = meals[j];
-                html += `
-                  <div class="column">
-                    <div class="meal-item" data-id="${meal.idMeal}">
-                      <div class="meal-img">
-                        <img src="${meal.strMealThumb}" alt="food">
-                      </div>
-                      <div class="meal-name">
-                        <h3>${meal.strMeal}</h3>
-                        <a href="#" class="recipe-btn">Get Recipe</a>
-                      </div>
-                    </div>
+            for (let i = 0; i < meals.length; i++) {
+              const meal = meals[i];
+              html += `
+                <div class="meal-item" data-id="${meal.idMeal}">
+                  <div class="meal-img">
+                    <img src="${meal.strMealThumb}" alt="food">
                   </div>
-                `;
+                  <div class="meal-name">
+                    <h3>${meal.strMeal}</h3>
+                    <a href="#" class="recipe-btn">Get Recipe</a>
+                  </div>
+                </div>
+              `;
+
+              // Add a new row after every three recipes
+              if ((i + 1) % 3 === 0 && i !== meals.length - 1) {
+                html += "</div><div class='row'>";
               }
-              html += "</div>";
             }
             mealList.classList.remove("notFound");
           } else {
