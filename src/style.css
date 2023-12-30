@@ -313,6 +313,34 @@ p {
   font-weight: 600;
   width: 100%;
 }
+.meal-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.meal-item {
+  flex: 0 0 calc(33.333% - 20px); /* Adjust width to have three items per row with some spacing */
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.meal-img img {
+  width: 100%;
+  height: auto;
+}
+
+.meal-name {
+  text-align: center;
+}
+
+/* Add styles for the meal details section as needed */
+.meal-details {
+  display: none;
+}
+
+.showRecipe .meal-details {
+  display: block;
+}
 
 @media only screen and (max-width: 768px) {
   .left-side {
