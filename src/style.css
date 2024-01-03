@@ -319,7 +319,7 @@ p {
 }
 
 .meal-item {
-  flex: 0 0 calc(33.333% - 20px); /* Adjust width to have three items per row with some spacing */
+  flex: 0 0 calc(33.333% - 20px);
   margin: 10px;
   box-sizing: border-box;
 }
@@ -333,7 +333,6 @@ p {
   text-align: center;
 }
 
-/* Add styles for the meal details section as needed */
 .meal-details {
   display: none;
 }
@@ -356,7 +355,9 @@ p {
     gap: 2rem;
   }
   .meal-item {
-    margin: 0;
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
   }
   .meal-details {
     width: 700px;
