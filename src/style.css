@@ -23,7 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: var(--tenne-tawny);
+  background-color: var(--tenne-tawny-dark);
 }
 
 .image {
