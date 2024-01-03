@@ -177,8 +177,7 @@ p {
 .meal-img img {
   width: 100%;
   display: block;
-  height: 80px;
-
+  height: 60px;
 }
 .meal-name {
   margin-top: 5px;
