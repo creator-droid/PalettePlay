@@ -367,15 +367,6 @@ p {
   }
 }
 @media screen and (min-width: 768px) {
-  .name {
-    font-size: 50px;
-  }
-
-  .slogan {
-    font-size: 14px;
-    margin-top: 10px;
-  }
-
   #meal {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
