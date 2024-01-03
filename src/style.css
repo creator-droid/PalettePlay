@@ -177,9 +177,11 @@ p {
 .meal-img img {
   width: 100%;
   display: block;
+  height: 80px;
+
 }
 .meal-name {
-  padding: 1.5rem 0.5rem;
+  margin-top: 5px;
   color: black;
   text-align: center;
 }
