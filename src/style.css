@@ -48,7 +48,6 @@ img {
   animation: fadeInUp 1s ease-out forwards;
 }
 .title {
-  text-align: center;
   color: var(--tenne-tawny-dark);
   text-shadow: 2px 2px 4px #333;
   font-size: 45px;
