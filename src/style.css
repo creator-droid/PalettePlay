@@ -5,7 +5,7 @@
 }
 
 :root {
-  --tenne-tawny: #f8f8f8;
+  --tenne-tawny: #ffc0cb;
   --tenne-tawny-dark: #eec0c8;
 }
 
@@ -22,7 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: var(--tenne-tawny-dark);
+  background-color: var(--tenne-tawny);
 }
 
 .image {
