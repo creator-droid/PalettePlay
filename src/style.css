@@ -22,7 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: var(--tenne-tawny);
+  background-color: var(--tenne-tawny-dark);
 }
 
 .image {
@@ -173,6 +173,7 @@ p {
 }
 .meal-name {
   padding: 1.5rem 0.5rem;
+  color: ;
 }
 .meal-name h3 {
   font-size: 1.4rem;
