@@ -85,7 +85,4 @@ document.addEventListener("DOMContentLoaded", function () {
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add("showRecipe");
   }
-  function goBack() {
-    window.history.back();
-  }
 });
