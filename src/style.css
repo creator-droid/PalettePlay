@@ -180,7 +180,7 @@ p {
 }
 .recipe-btn {
   text-decoration: none;
-  color: var(--tenne-tawny);
+  color: white;
   background: var(--tenne-tawny-dark);
   text-align: center;
   font-weight: 500;
