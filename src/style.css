@@ -355,9 +355,10 @@ p {
     gap: 2rem;
   }
   .meal-item {
-    width: calc(33.33% - 20px);
+    flex: 0 0 calc(33.33% - 20px);
     margin: 10px;
     box-sizing: border-box;
+    width: 100%;
   }
   .meal-details {
     width: 700px;
@@ -376,5 +377,10 @@ p {
 @media screen and (min-width: 992px) {
   #meal {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .meal-item {
+    width: calc(33.33% - 20px);
   }
 }
