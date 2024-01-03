@@ -308,7 +308,7 @@ p {
 .recipe-meal-img img {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 25%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
