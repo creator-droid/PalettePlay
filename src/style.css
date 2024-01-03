@@ -47,6 +47,15 @@ img {
   transform: translateY(-20px);
   animation: fadeInUp 1s ease-out forwards;
 }
+.title {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px #333;
+  font-size: 75px;
+  font-family: "Antonio", sans-serif;
+  margin-bottom: 20px;
+  opacity: 0;
+}
 
 .button {
   background-color: #848947;
