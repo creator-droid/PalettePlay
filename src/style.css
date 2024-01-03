@@ -342,26 +342,6 @@ p {
   .name {
     font-size: 50px;
   }
-  #meal {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-  .meal-item {
-    box-sizing: border-box;
-    width: calc(33.33% - 20px);
-    margin: 10px;
-    float: left;
-  }
-
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .meal-details {
-    width: 700px;
-  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -373,13 +353,22 @@ p {
     font-size: 40px;
   }
 }
+@media screen and (min-width: 768px) {
+  #meal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .meal-item {
+    margin: 0;
+  }
+  .meal-details {
+    width: 700px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   #meal {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 768px) {
-  .meal-item {
-    width: calc(50% - 20px);
   }
 }
