@@ -38,7 +38,7 @@ img {
 }
 
 .name {
-  color: white;
+  color: var(--tenne-tawny-dark);
   text-shadow: 2px 2px 4px #333;
   font-size: 75px;
   font-family: "Antonio", sans-serif;
