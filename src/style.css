@@ -164,7 +164,7 @@ p {
   margin: 2.4rem 0;
 }
 .meal-item {
-  width: calc(20%-20px);
+  width: calc(20%-15px);
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -357,7 +357,7 @@ p {
   }
 
   .name {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 @media screen and (min-width: 768px) {
