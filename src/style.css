@@ -179,7 +179,7 @@ p {
   display: block;
 }
 .meal-name {
-  margin-top: 5px;
+  padding: 1.5rem 0.5rem;
   color: black;
   text-align: center;
 }
