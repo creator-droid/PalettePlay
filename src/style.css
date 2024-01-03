@@ -272,7 +272,6 @@ p {
 .recipe-category {
   background: #fff;
   font-weight: 600;
-  text-align: center;
   color: var(--tenne-tawny);
   display: inline-block;
   padding: 0.2rem 0.5rem;
