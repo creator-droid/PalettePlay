@@ -179,8 +179,9 @@ p {
 }
 .recipe-btn {
   text-decoration: none;
-  color: var(--tenne-tawny-dark);
-  background: var(--tenne-tawny);
+  color: var(--tenne-tawny);
+  background: var(--tenne-tawny-dark);
+  text-align: center;
   font-weight: 500;
   font-size: 1.1rem;
   padding: 0.75rem 0;
