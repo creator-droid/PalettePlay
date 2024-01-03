@@ -157,7 +157,7 @@ p {
   margin: 2.4rem 0;
 }
 .meal-item {
-  width: calc(20%-20px);
+  width: calc(20%-10px);
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -168,7 +168,7 @@ p {
   margin: 2rem 0;
 }
 .meal-img img {
-  width: 80%;
+  width: 100%;
   display: block;
 }
 .meal-name {
