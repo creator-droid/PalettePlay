@@ -355,10 +355,16 @@ p {
     gap: 2rem;
   }
   .meal-item {
-    flex: 0 0 calc(33.33% - 20px);
-    margin: 10px;
     box-sizing: border-box;
-    width: 100%;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    float: left;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
   }
   .meal-details {
     width: 700px;
@@ -379,8 +385,8 @@ p {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .meal-item {
-    width: calc(33.33% - 20px);
+    width: calc(50% - 20px);
   }
 }
