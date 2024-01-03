@@ -355,7 +355,7 @@ p {
     gap: 2rem;
   }
   .meal-item {
-    flex: 0 0 calc(33.333% - 20px);
+    width: calc(33.33% - 20px);
     margin: 10px;
     box-sizing: border-box;
   }
